@@ -1,0 +1,189 @@
+﻿/* ===== General ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+}
+
+/* ===== Menu de navegacion ===== */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #1f2a44;
+    display: flex;
+    align-items: center;
+}
+
+    .menu .titulo {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 30px;
+    }
+
+    .menu li a {
+        display: block;
+        color: #d6dbe6;
+        padding: 16px 18px;
+        text-decoration: none;
+    }
+
+        .menu li a:hover:not(.active) {
+            background-color: #2c3a5c;
+            color: white;
+        }
+
+        .menu li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+/* ===== Contenido ===== */
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+    .tarjeta h2 {
+        margin-top: 0;
+        color: #1f2a44;
+    }
+
+    .tarjeta h3 {
+        margin-top: 0;
+        color: #1f2a44;
+    }
+
+/* ===== Tabla (GridView) ===== */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .tabla th {
+        background-color: #1f2a44;
+        color: white;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .tabla td {
+        padding: 10px;
+        border-bottom: 1px solid #e3e6eb;
+    }
+
+    .tabla tr:nth-child(even) td {
+        background-color: #f7f9fc;
+    }
+
+    .tabla tr:hover td {
+        background-color: #e8f6ef;
+    }
+
+/* ===== Formulario ===== */
+.campo {
+    margin-bottom: 15px;
+}
+
+    .campo label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .campo input[type=text] {
+        width: 100%;
+        padding: 9px;
+        border: 1px solid #c8cdd6;
+        border-radius: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+        .campo input[type=text]:focus {
+            border-color: #04AA6D;
+            outline: none;
+        }
+
+.nota {
+    font-size: 13px;
+    color: #777777;
+}
+
+/* ===== Botones ===== */
+.botones {
+    margin-top: 10px;
+}
+
+.boton {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+    .boton:hover {
+        opacity: 0.85;
+    }
+
+.boton-agregar {
+    background-color: #04AA6D;
+}
+
+.boton-modificar {
+    background-color: #2f6fdb;
+}
+
+.boton-borrar {
+    background-color: #d9534f;
+}
+
+/* ===== Mensaje ===== */
+.mensaje {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1f2a44;
+}
+
+/* ===== Pagina de inicio ===== */
+.opciones {
+    display: flex;
+    gap: 20px;
+}
+
+.opcion {
+    flex: 1;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-decoration: none;
+    color: #333333;
+    border-top: 5px solid #04AA6D;
+}
+
+    .opcion:hover {
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .opcion h3 {
+        margin-top: 0;
+        color: #1f2a44;
+    }
